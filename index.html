@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <!-- Tabla listar -->
+        <div class="consultar mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Productos APP</h1>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="btn btn-primary">Nuevo Producto</a>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="table table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Marca</th>
+                                <th>Categoría</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBodyProducto">    
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Fin tabla listar  -->      
+        <hr>
+        <!-- Detalles -->
+        <div class="details">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-warning">Detalles</h2>
+                </div>
+                <div class="col-12">
+                    <div id="productDetails">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin detalles -->
+        <hr>
+
+        <!-- Inicio del formulario -->
+            <div class="product-form">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-primary">Crear formulario</h2>
+                    </div>
+                    <div class="col-12">
+                        <form id="createProduct">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                                <input id="nombre" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Marca</span>
+                                <input id="marca" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Categoria</span>
+                                <input id="categoria" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Precio</span>
+                                <input id="precio" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div> 
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Cantidad</span>
+                                <input id="cantidad" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div id="btnFormulario">
+                                <input id="btnCrear" type="submit" onclick="crearProducto(event)" value="Create" class="btn btn-primary"> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <!-- Fin del formulario -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/producto.js"></script>
+</body>
+</html>
